@@ -1,0 +1,24 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  & .container {
+    padding: 40px;
+  }
+
+  &__logo {
+    width: fit-content;
+
+    &-link {
+      display: inline-block;
+    }
+
+    &-image {
+      display: inline-block;
+      max-width: 100px;
+      height: auto;
+    }
+  }
+}

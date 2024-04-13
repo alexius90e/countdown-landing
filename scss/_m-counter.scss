@@ -1,0 +1,26 @@
+.counter {
+
+  width: fit-content;
+
+  &__labels {
+    display: flex;
+    justify-content: space-between;
+    gap: 8%;
+    font-family: 'SF Pro Text', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #f2f2f2;
+
+    & > span {
+      flex: 1 1 20%;
+    }
+  }
+
+  &__time {
+    font-family: 'JAGUAR', sans-serif;
+    font-weight: 400;
+    font-size: 120px;
+    color: #f2f2f2;
+  }
+}
