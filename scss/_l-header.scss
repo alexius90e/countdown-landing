@@ -6,6 +6,20 @@
 
   & .container {
     padding: 40px;
+
+    @include desktop {
+      padding: 40px 20px;
+    }
+
+    @include laptop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include mobile {
+      padding: 16px;
+    }
   }
 
   &__logo {
@@ -19,6 +33,10 @@
       display: inline-block;
       max-width: 100px;
       height: auto;
+
+      @include mobile {
+        max-width: 64px;
+      }
     }
   }
 }

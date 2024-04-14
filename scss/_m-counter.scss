@@ -1,26 +1,60 @@
 .counter {
-
+  min-width: 560px;
   width: fit-content;
+  margin: 0 auto;
+
+  @include desktop {
+    min-width: 360px;
+  }
+
+  @include laptop {
+    min-width: 540px;
+  }
+
+  @include mobile {
+    min-width: auto;
+  }
 
   &__labels {
     display: flex;
     justify-content: space-between;
-    gap: 8%;
+    gap: 20px;
     font-family: 'SF Pro Text', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
     color: #f2f2f2;
 
+    @include mobile {
+      font-size: 14px;
+      line-height: 120%;
+    }
+
     & > span {
       flex: 1 1 20%;
+      user-select: none;
     }
   }
 
   &__time {
-    font-family: 'JAGUAR', sans-serif;
+    font-family: 'Carbon', sans-serif;
     font-weight: 400;
     font-size: 120px;
+    line-height: 100%;
     color: #f2f2f2;
+    text-shadow: 2px 0 0 #0724fe, -2px 0 0 #f9ff00;
+    user-select: none;
+
+    @include desktop {
+      font-size: 74px;
+    }
+
+    @include laptop {
+      font-size: calc(90px + 40 * (100vw / 992));
+    }
+
+    @include mobile {
+      font-size: calc(46px + 30 * (100vw / 576));
+    }
   }
 }

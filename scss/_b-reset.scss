@@ -1,8 +1,39 @@
+@font-face {
+  font-family: 'Carbon';
+  src: url('../fonts/carbon.bl-regular.otf') format('truetype');
+}
 
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../fonts/SFProText-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../fonts/SFProText-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../fonts/SFProText-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../fonts/SFProText-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 
 html {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'SF Pro Text', sans-serif;
   font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
@@ -20,7 +51,7 @@ a,
 button,
 input,
 textarea {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'SF Pro Text', sans-serif;
   text-decoration: none;
 }
 
