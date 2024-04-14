@@ -503,10 +503,57 @@
     }
 
     &-capsule {
+      display: flex;
+      align-items: center;
+      gap: 6px;
       margin: 0 0 12px;
       font-weight: 400;
       font-size: 20px;
       color: #181818;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        height: 32px;
+        width: 32px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @include laptop {
+          height: 26px;
+          width: 26px;
+        }
+
+        @include mobile {
+          height: 20px;
+          width: 20px;
+        }
+      }
+
+      &_bronze {
+        &::before {
+          background-image: url(../assets/bronze.png);
+        }
+      }
+
+      &_silver {
+        &::before {
+          background-image: url(../assets/silver.png);
+        }
+      }
+
+      &_gold {
+        &::before {
+          background-image: url(../assets/gold.png);
+        }
+      }
+
+      &_diamond {
+        &::before {
+          background-image: url(../assets/diamond.png);
+        }
+      }
     }
 
     &-family {

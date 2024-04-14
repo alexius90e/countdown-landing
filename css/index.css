@@ -678,10 +678,46 @@ img {
   color: #181818;
 }
 .main-screen__slide-capsule {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   margin: 0 0 12px;
   font-weight: 400;
   font-size: 20px;
   color: #181818;
+}
+.main-screen__slide-capsule::before {
+  content: "";
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 992px) {
+  .main-screen__slide-capsule::before {
+    height: 26px;
+    width: 26px;
+  }
+}
+@media (max-width: 576px) {
+  .main-screen__slide-capsule::before {
+    height: 20px;
+    width: 20px;
+  }
+}
+.main-screen__slide-capsule_bronze::before {
+  background-image: url(../assets/bronze.png);
+}
+.main-screen__slide-capsule_silver::before {
+  background-image: url(../assets/silver.png);
+}
+.main-screen__slide-capsule_gold::before {
+  background-image: url(../assets/gold.png);
+}
+.main-screen__slide-capsule_diamond::before {
+  background-image: url(../assets/diamond.png);
 }
 .main-screen__slide-family {
   display: flex;
