@@ -16,5 +16,30 @@ function updateCounter() {
 }
 
 updateCounter();
-
 setInterval(updateCounter, 1000);
+
+const sidebarSwiperOptions = {
+  autoHeight: true,
+  speed: 4000,
+  direction: 'vertical',
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 8,
+  centeredSlides: true,
+  allowTouchMove: false,
+};
+
+const sidebarLeftSwiper = new Swiper('.swiper.swiper_sidebar-left', {
+  ...sidebarSwiperOptions,
+  autoplay: {
+    delay: 0,
+  },
+});
+
+const sidebarRightSwiper = new Swiper('.swiper.swiper_sidebar-right', {
+  ...sidebarSwiperOptions,
+  autoplay: {
+    delay: 0,
+    reverseDirection: true,
+  },
+});
