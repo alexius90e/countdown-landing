@@ -103,6 +103,10 @@
       font-size: 14px;
     }
 
+    @include laptop {
+      font-size: 16px;
+    }
+
     @include mobile {
       margin: 20px 0;
       padding: 24px 20px;
@@ -128,6 +132,14 @@
         color: rgba($color: $white, $alpha: 0.9);
 
         @include desktop {
+          flex: 0 0 84px;
+        }
+
+        @include laptop  {
+          flex: 0 0 100px;
+        }
+
+        @include mobile {
           flex: 0 0 84px;
         }
       }
@@ -158,6 +170,7 @@
       }
 
       @include laptop {
+        display: flex;
         font-size: 16px;
       }
 
@@ -230,6 +243,7 @@
 
     @include mobile {
       flex-wrap: wrap;
+      font-size: 14px;
     }
 
     &:last-child {
@@ -295,7 +309,7 @@
       flex: 1 1 auto;
 
       @include desktop {
-        flex: 0 0 100px;
+        flex: 0 0 84px;
       }
 
       @include laptop {
@@ -303,7 +317,7 @@
       }
 
       @include mobile {
-        flex: 0 0 100px;
+        flex: 0 0 84px;
       }
     }
 
@@ -351,7 +365,7 @@
 
         &-value {
           @include desktop {
-            flex: 0 0 100px;
+            flex: 0 0 84px;
           }
 
           @include laptop {
@@ -359,7 +373,7 @@
           }
 
           @include mobile {
-            flex: 0 0 100px;
+            flex: 0 0 84px;
           }
         }
       }
