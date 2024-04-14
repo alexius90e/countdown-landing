@@ -18,6 +18,28 @@ function updateCounter() {
 updateCounter();
 setInterval(updateCounter, 1000);
 
+const mainSwiper = new Swiper('.main-screen__main-slider .swiper', {
+  speed: 4000,
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 8,
+  allowTouchMove: false,
+  breakpoints: {
+    576: {
+      slidesPerView: 2.2,
+    },
+    640: {
+      slidesPerView: 2.5,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+  },
+  autoplay: {
+    delay: 0,
+  },
+});
+
 const sidebarSwiperOptions = {
   autoHeight: true,
   speed: 4000,
